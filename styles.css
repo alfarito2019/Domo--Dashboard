@@ -1,0 +1,42 @@
+/* Reset rápido */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Título negro en la parte superior */
+.titulo {
+    color: #000;
+    margin: 24px 16px;
+}
+
+/* Banner rojo inmediatamente debajo del título */
+.banner {
+    background: red;
+    width: 100%;
+    height: 140px;
+}
+
+/* Contenedor principal en dos columnas */
+.main {
+    display: flex;
+    gap: 16px;
+    padding: 32px 16px;
+}
+
+/* Informe de Power BI a la izquierda */
+.report {
+    flex: 1 1 0;        /* ocupa todo el espacio disponible */
+    min-width: 600px;    /* ancho mínimo para que no se encoja demasiado */
+    height: 600px;
+    border: none;
+}
+
+/* Cuadro gris a la derecha */
+.side-box {
+    width: 320px;        /* ancho fijo, cámbialo si lo necesitas */
+    height: 600px;       /* igual altura que el iframe para alinearlo */
+    background: #d9d9d9; /* gris claro */
+}
